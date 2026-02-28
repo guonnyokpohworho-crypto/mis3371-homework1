@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St Patrick’s Health - Patient Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="banner">
+  <div class="banner-left">
+    <img src="stpatrickshealth-logo.png" alt="St Patrick’s Health Logo" id="logo">
+    <div>
+      <h1>St Patrick’s Health</h1>
+      <p id="today"></p>
+    </div>
+  </div>
+  <hr>
+  <hr>
+</div>
+
+<div id="content">
+  <h2>Patient Registration Form</h2>
+
+  <form action="thankyou.html">
+    <table>
+
+      <tr>
+        <td><label for="firstName">First Name</label></td>
+        <td><input type="text" id="firstName" name="firstName" maxlength="30" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="middleInitial">Middle Initial</label></td>
+        <td><input type="text" id="middleInitial" name="middleInitial" maxlength="1"></td>
+      </tr>
+
+      <tr>
+        <td><label for="lastName">Last Name</label></td>
+        <td><input type="text" id="lastName" name="lastName" maxlength="30" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="dob">Date of Birth (MM/DD/YYYY)</label></td>
+        <td>
+          <input type="text" id="dob" name="dob"
+          placeholder="MM/DD/YYYY"
+          pattern="(0[1-9]|1[0-2])\/(0[1-9]|[12][0-9]|3[01])\/(19|20)\d\d"
+          required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="ssn">Social Security</label></td>
+        <td>
+          <input type="password" id="ssn" name="ssn" maxlength="11"
+          placeholder="###-##-####" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="addr1">Address Line 1</label></td>
+        <td><input type="text" id="addr1" name="addr1" maxlength="30" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="addr2">Address Line 2</label></td>
+        <td><input type="text" id="addr2" name="addr2" maxlength="30"></td>
+      </tr>
+
+      <tr>
+        <td><label for="city">City</label></td>
+        <td><input type="text" id="city" name="city" maxlength="30" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="state">State</label></td>
+        <td>
+          <select id="state" name="state" required>
+            <option value="">-- Select --</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>District of Columbia</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>Illinois</option>
+            <option>Indiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York</option>
+            <option>North Carolina</option>
+            <option>North Dakota</option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>Pennsylvania</option>
+            <option>Rhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>
+            <option>Puerto Rico</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="zip">Zip Code</label></td>
+        <td><input type="text" id="zip" name="zip" minlength="5" maxlength="10" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="symptoms">Describe Symptoms</label></td>
+        <td><textarea id="symptoms" name="symptoms" rows="3" cols="50"></textarea></td>
+      </tr>
+
+      <tr>
+        <td>Illness History</td>
+        <td class="stack">
+          <label><input type="checkbox"> Chicken Pox</label>
+          <label><input type="checkbox"> Measles</label>
+          <label><input type="checkbox"> Covid-19</label>
+          <label><input type="checkbox"> Small Pox</label>
+          <label><input type="checkbox"> Tetanus</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Sex</td>
+        <td class="stack">
+          <label><input type="radio" name="sex" required> Male</label>
+          <label><input type="radio" name="sex"> Female</label>
+          <label><input type="radio" name="sex"> Other</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Pregnant</td>
+        <td class="stack">
+          <label><input type="radio" name="pregnant" required> Yes</label>
+          <label><input type="radio" name="pregnant"> No</label>
+          <label><input type="radio" name="pregnant"> N/A</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Prescribed Medicine</td>
+        <td class="stack">
+          <label><input type="radio" name="prescribed" required> Yes</label>
+          <label><input type="radio" name="prescribed"> No</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="exercise">Weekly Exercise (0-10)</label></td>
+        <td>
+          <input type="range" id="exercise" min="0" max="10" value="5">
+          <span id="exerciseValue">5</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="userid">User ID</label></td>
+        <td><input type="text" id="userid" maxlength="20" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td><input type="password" id="password" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="password2">Re-enter Password</label></td>
+        <td><input type="password" id="password2" required></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td class="buttons">
+          <input type="reset" value="CLEAR AND START OVER">
+          <input type="submit" value="SUBMIT">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</div>
+
+<div id="footer">
+  <strong>St Patrick’s Health</strong><br>
+  PO BOX 18881<br>
+  Sugar Land, TX 77496
+  <br><br>
+  <button type="button" onclick="alert('Contact Us')">Contact Us</button>
+</div>
+
+<script>
+  const d = new Date();
+  document.getElementById("today").textContent =
+  "Today is: " + d.toLocaleDateString(undefined,
+  { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
+  const slider = document.getElementById("exercise");
+  const output = document.getElementById("exerciseValue");
+  slider.addEventListener("input", function() {
+    output.textContent = slider.value;
+  });
+</script>
+
+</body>
+</html>
