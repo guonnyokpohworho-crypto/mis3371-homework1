@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  margin: 0;
+}
+
+#banner {
+  background-color: #0f2f5f;
+  color: white;
+  padding: 15px;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#logo {
+  height: 60px;
+}
+
+#content {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  max-width: 900px;
+}
+
+td {
+  padding: 8px;
+}
+
+.stack label {
+  display: block;
+  margin: 4px 0;
+}
+
+input, textarea, select {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  text-align: right;
+}
+
+#footer {
+  background-color: #e6ecf5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
